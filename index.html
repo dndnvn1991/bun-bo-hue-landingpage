@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phở Gà Ta Chính Gốc Hà Nội – Đến Với Đà Nẵng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">PhoGa<span>DaNang</span></div>
+      <nav>
+        <a href="#hero">Trang chủ</a>
+        <a href="#menu">Thực đơn</a>
+        <a href="#booking" class="btn-book">Đặt bàn</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="bounce-in">Phở Gà Ta Chính Gốc Hà Nội<br/>Đến Với Đà Nẵng</h1>
+      <p class="slogan fade-in">Nước dùng thanh ngọt Thủ đô giữa biển xanh miền Trung</p>
+      <a href="#menu" class="btn-primary fade-in">Xem Thực Đơn</a>
+    </div>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <h2 class="section-title">Thực Đơn Tinh Hoa</h2>
+      <div class="menu-grid" id="menu-grid">
+        <!-- JS will populate menu items -->
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="booking-section">
+    <div class="container">
+      <div class="booking-card">
+        <h2 class="section-title">Đặt Bàn / Đặt Hàng</h2>
+        <p class="booking-desc">Để lại thông tin, chúng tôi sẽ chuẩn bị những bát phở nóng hổi nhất cho bạn!</p>
+        <form id="booking-form" class="booking-form">
+          <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> Họ và tên</label>
+            <input type="text" id="name" required placeholder="Nguyễn Văn A">
+          </div>
+          <div class="form-group">
+            <label for="phone"><i class="fas fa-phone"></i> Số điện thoại</label>
+            <input type="tel" id="phone" required placeholder="0901234567">
+          </div>
+          <div class="form-group">
+            <label for="time"><i class="fas fa-clock"></i> Giờ đến / Giờ nhận</label>
+            <input type="time" id="time" required>
+          </div>
+          <div class="form-group">
+            <label for="item"><i class="fas fa-utensils"></i> Món ăn chính</label>
+            <select id="item" required>
+              <option value="" disabled selected>Chọn món chính...</option>
+              <option value="Phở gà ta truyền thống">Phở gà ta truyền thống</option>
+              <option value="Phở gà xé phay">Phở gà xé phay</option>
+              <option value="Phở gà nấm hương">Phở gà nấm hương</option>
+              <option value="Bún thang">Bún thang</option>
+              <option value="Cháo gà">Cháo gà</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label for="note"><i class="fas fa-comment-dots"></i> Ghi chú thêm (VD: nhiều hành, không mì chính...)</label>
+            <textarea id="note" rows="3" placeholder="Yêu cầu thêm của bạn..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit full-width">Gửi Đơn Đặt <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3>PhoGa<span>DaNang</span></h3>
+        <p><i class="fas fa-map-marker-alt"></i> 78 Nguyễn Văn Linh, Hải Châu, Đà Nẵng</p>
+        <p><i class="fas fa-phone-alt"></i> 090 123 4567</p>
+        <p><i class="fas fa-clock"></i> Mở cửa: 06:00 - 22:00 hàng ngày</p>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="credit">
+      <p>Thiết kế bởi Minh Đỗ</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
